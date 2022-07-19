@@ -1,21 +1,12 @@
 const http = require('http')
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const mongoose = require('mongoose')
+const Blog = require('./models/blog')
 
-//TODO refactor whole thing according to 4.1 blogilista, step1
-const blogSchema = mongoose.Schema({
-  title: String,
-  author: String,
-  url: String,
-  likes: Number
-})
-
-const Blog = mongoose.model('Blog', blogSchema)
-
-const mongoUrl = 'mongodb://localhost/bloglist'
-mongoose.connect(mongoUrl)
+//TODO refactor whole thing according to 4.1 blogilista, step1. Installers done, put things in
+//separate files
 
 app.use(cors())
 app.use(express.json())
