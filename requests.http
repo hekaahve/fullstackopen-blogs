@@ -11,3 +11,16 @@ content-type: application/json
 ###
 GET http://localhost:3001/api/blogs HTTP/1.1
 content-type: application/json
+###
+DELETE http://localhost:3001/api/blogs/633b38e91a077c346f85a44e HTTP/1.1
+###
+PUT http://localhost:3001/api/blogs/62d70745f3d133697762ce38 HTTP/1.1
+content-type: application/json
+
+{
+  "title": "updated blog",
+  "author": "HA",
+  "url": "www/jsfkf",
+  "likes": 6
+}
+
