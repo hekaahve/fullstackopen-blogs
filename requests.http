@@ -23,4 +23,17 @@ content-type: application/json
   "url": "www/jsfkf",
   "likes": 6
 }
+###
+GET http://localhost:3001/api/users HTTP/1.1
+content-type: application/json
+###
+POST http://localhost:3001/api/users HTTP/1.1
+content-type: application/json
+
+{
+  "username": "tahven",
+  "name": "TA",
+  "password": "salainenTimo"
+}
+
 
