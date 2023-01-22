@@ -2,10 +2,11 @@ POST http://localhost:3001/api/blogs HTTP/1.1
 content-type: application/json
 
 {
-  "title": "Third blog",
+  "title": "piipaapiipaa",
   "author": "HA",
-  "url": "www/jsjsj",
-  "likes": 1
+  "url": "www/jsfkf",
+  "likes": 1,
+  "userId":"63c1b85803bcede333e19358"
 }
 
 ###
@@ -18,10 +19,11 @@ PUT http://localhost:3001/api/blogs/62d70745f3d133697762ce38 HTTP/1.1
 content-type: application/json
 
 {
-  "title": "first blog",
+  "title": "dingdong",
   "author": "HA",
   "url": "www/jsfkf",
-  "likes": 6
+  "likes": 6,
+  "userId":"63c1b85803bcede333e19358"
 }
 ###
 GET http://localhost:3001/api/users HTTP/1.1
@@ -31,7 +33,7 @@ POST http://localhost:3001/api/users HTTP/1.1
 content-type: application/json
 
 {
-  "username": "käpy",
+  "username": "käpy2",
   "name": "KA",
   "password": "salainenKäpy"
 }
