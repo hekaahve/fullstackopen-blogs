@@ -1,12 +1,12 @@
 POST http://localhost:3001/api/blogs HTTP/1.1
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhaHZlbiIsImlkIjoiNjNjMWI4NTgwM2JjZWRlMzMzZTE5MzU4IiwiaWF0IjoxNjc0ODM5OTU1fQ.LKo2P7pxjzuhyOInEDeMjEVYxyJYupUAL6aVEEBovdc
 
 {
-  "title": "piipaapiipaa",
+  "title": "heininBlogi",
   "author": "HA",
   "url": "www/jsfkf",
-  "likes": 1,
-  "userId":"63c1b85803bcede333e19358"
+  "likes": 4
 }
 
 ###
@@ -36,6 +36,15 @@ content-type: application/json
   "username": "käpy2",
   "name": "KA",
   "password": "salainenKäpy"
+}
+###
+
+POST http://localhost:3001/api/login HTTP/1.1
+content-type: application/json
+
+{
+  "username": "hahven",
+  "password": "salasana"
 }
 
 
