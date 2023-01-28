@@ -13,7 +13,8 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImvDp
 GET http://localhost:3001/api/blogs HTTP/1.1
 content-type: application/json
 ###
-DELETE http://localhost:3001/api/blogs/63c1aaf08bbecf4541123c96 HTTP/1.1
+DELETE http://localhost:3001/api/blogs/63d56c75c417e848aa499b61 HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhaHZlbiIsImlkIjoiNjNjMWI4NTgwM2JjZWRlMzMzZTE5MzU4IiwiaWF0IjoxNjc0OTM2NjEwfQ.dVxpSxSPHCtz5lppdZqhvsrgfn8vW6AYcDC4LQvZdWY
 ###
 PUT http://localhost:3001/api/blogs/62d70745f3d133697762ce38 HTTP/1.1
 content-type: application/json
@@ -43,8 +44,8 @@ POST http://localhost:3001/api/login HTTP/1.1
 content-type: application/json
 
 {
-  "username": "käpy2",
-  "password": "salainenKäpy"
+  "username": "hahven",
+  "password": "salasana"
 }
 
 
